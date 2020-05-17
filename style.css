@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 30px;
+
+}
+
+
+.nav-link {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.jumbotron {
+  width: 100%;
+  background-color: transparent;
+  min-height: 100vh;
+  color: white;
+  align-items: center;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  line-height: 90px;
+  font-size: 65px;
+  padding: 40px 0;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.buttons {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.jumbotron .btn {
+  color: white;
+  padding: 8px 20px;
+  margin: 0 20px;
+  background-color: #ff611d;
+}
+
+.dimo {
+  color: white;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 2px solid #ff611d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+=}
+
+.navbar-brand i {
+  font-size: 30px;
+    margin:0 10px;
+
+
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.first {
+  width: 100%;
+  background-color: transparent;
+  min-height: 500px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.second {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://c4.wallpaperflare.com/wallpaper/741/599/723/pizza-food-vegetables-fruit-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding: 20px 0;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
+.first .display-4 {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 50px;
+}
+
+.lead {
+  font-family: "Nunito", sans-serif;
+  padding: 30px 0;
+  color: #212121;
+  font-size: 20px;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+
+  min-height: 650px;
+  align-items: center;
+  background-size: cover;
+  padding: 100px 0;
+
+  justify-content: center;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.nultylighting.co.uk/wp-content/uploads/2018/03/lighting-dramatic-feature-ceiling-dark-wood-slats-white-undulating-soffit-nulty-banner.jpg);
+  flex-direction: column;
+}
+
+.box {
+  width: 100%;
+  color: white;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: transparent;
+  margin: 20px 0;
+}
+
+.box i {
+  font-size: 60px;
+  padding: 50px;
+  color: #ff611d;
+}
+
+.services .display-4 {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  padding: 20px 0;
+}
+
+.box .display-4 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.menufood {
+  width: 100%;
+  display: flex;
+  background-color: whitesmoke;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+
+  flex-direction: column;
+}
+
+.menu {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100px;
+  padding: 30px;
+  color: white;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+.menufood .text-center {
+  padding: 30px 0;
+}
+.menu .btn {
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 10px;
+  background-color: #ff611d;
+}
+
+.menu i {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.gallery {
+  width: 100%;
+  color: white;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 20px 0;
+}
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 100px 0;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.test {
+  width: 100%;
+  border: 2px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  margin: 20px 0;
+  background-color: white;
+
+  justify-content: flex-start;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: #ff611d;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.test img {
+  width: 40%;
+  border-radius: 500px;
+  border: 4px solid white;
+  margin-top: -80px;
+}
+
+.test .display-4 {
+  font-size: 30px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  border-bottom: 2px solid whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+
+.test .lead {
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 30px;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  background-color: whitesmoke;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.form-control {
+  width: 100%;
+  min-height: 50px;
+  margin: 20px 0;
+  border: 0;
+  border-radius: 0;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.contact .display-4 {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  padding: 30px 0;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact .text-center {
+  padding: 30px 0;
+}
+.cta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #ff611d;
+  margin: 20px 0;
+  color: white !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+}
+
+.icon i {
+  font-size: 60px;
+  color: #ff611d;
+  margin-top: -40px;
+}
+
+
+.footer {
+  width: 100%;
+  background: #ff611d;
+
+  min-height: 70px;
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  border-top: 3px solid white;
+}
+
+.foot {
+  width: 100%;
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: 70px;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+}
+.foot .text-center {
+  font-size: 20px;
+  margin: 0;
+   color: white;
+  font-weight: bold;
+  padding: 0;
+  font-family: 'Raleway',sans-serif;
+  text-align: center;
+
+}
+
+.foot i {
+  font-size: 30px;
+   display: flex;
+  align-items: center;
+    text-align: center;
+    color: white;
+
+  justify-content: center;
+  margin:0 10px;
+}
+
+.phone h2 {
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
+}
+
+.centro h1{
+  color: #ff611d;
+  font-weight: bold;
+}
+
+
+
+.navbar-toggler-icon i {
+    outline: none;
+    box-shadow: none;
+    font-size: 40px; color: white
+}
+
+.navbar-toggler:focus {
+  outline: none;
+    box-shadow: none;
+}
+
+strong {
+  color: white;
+  font-weight: bold;
+  margin:0 5px;
+  font-family: "Nunito",sans-serif;
+}
+
+.text-center  h1 {
+    font-family: 'Raleway',sans-serif;
+    color: red;
+    font-weight: bold;
+
+}
