@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -10,11 +14,13 @@ body {
 .homepage {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+url(https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  background-attachment: fixed;
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 .navbar {
@@ -128,6 +134,7 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(https://c4.wallpaperflare.com/wallpaper/741/599/723/pizza-food-vegetables-fruit-wallpaper-preview.jpg);
+    
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -163,6 +170,7 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   align-items: center;
   background-size: cover;
   padding: 100px 0;
+  background-attachment: fixed;
 
   justify-content: center;
   background-position: center;
@@ -258,10 +266,14 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://images.unsplash.com/photo-1544982560-63ad67a35c23?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwaXp6YXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
   background-position: center;
   background-size: cover;
   margin: 20px 0;
+}
+
+.gallery:hover {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1544982560-63ad67a35c23?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwaXp6YXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
 }
 
 .testimonials {
@@ -285,8 +297,8 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   background-color: white;
 
   justify-content: flex-start;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
 
   flex-direction: column;
 }
@@ -296,8 +308,8 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   min-height: 150px;
   display: flex;
   align-items: center;
-  background-color: #ff611d;
-  justify-content: flex-start;
+background-image: linear-gradient(to right top, #ff611d, #ff591c, #ff501c, #ff461c, #ff3a1d);
+ justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -328,6 +340,8 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   width: 100%;
   display: flex;
   background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
   min-height: 600px;
   align-items: center;
   justify-content: center;
@@ -374,13 +388,29 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   justify-content: center;
 }
 
+.result {
+  width: calc(100%- 40px);
+  min-height: 50px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #232324;
+}
 .btn {
-  background-color: #ff611d;
+background-image: linear-gradient(to right top, #ff611d, #ff591c, #ff501c, #ff461c, #ff3a1d);
   margin: 20px 0;
   color: white !important;
   font-family: "Nunito", sans-serif;
 }
 
+.outline {
+  background-color: transparent!important;
+  border: 1px solid #ff611d;
+
+
+}
 .icon {
   width: 100%;
   display: flex;
@@ -398,7 +428,7 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
 
 .footer {
   width: 100%;
-  background: #ff611d;
+  background: #212121;
 
   min-height: 70px;
     display: flex;
@@ -406,8 +436,8 @@ url(https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg);
   flex-direction: column;
   color: white;
   justify-content: center;
-  border-top: 3px solid white;
 }
+
 
 .foot {
   width: 100%;
@@ -480,3 +510,65 @@ strong {
     font-weight: bold;
 
 }
+
+
+.thankyou {
+  width: 100%;
+  min-height: 600px;
+  display: none;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background-size: cover;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  animation:animate 4s;
+  flex-direction: column;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1605209763272-b5f7265d8ed5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+}
+
+.thankyou .display-4 {
+  padding: 20px;
+}
+.thankyou img {
+  width: 300px;
+  animation: anim 4s;
+
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes anim {
+  0% {
+transform: translateX(-50vh);
+  }
+
+  100% {
+    transform: translateX(50vh);
+
+
+  }
+}
+
+@media (max-width: 900px) {
+  .thankyou img {
+  animation: none;
+  width: 50%;
+
+}
+}
+
+

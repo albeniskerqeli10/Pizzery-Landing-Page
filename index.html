@@ -76,7 +76,7 @@
           <h1 class="display-4">We make best <br>Pizzas on the Town</h1>
           <div class="buttons">
           <a class="btn btn-lg">Menu</a>
-          <a class="btn btn-lg">Order</a>
+          <a class="btn btn-lg outline">Order</a>
         </div>
 
         </div>
@@ -246,18 +246,18 @@ About our shining piza delivery company
 </div>
    </div>
 
-   <div class="contact">
+   <div id="order" class="contact ">
     <h1 class="text-center">You can order by this form</h1>
      <div class="container">
  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
    <div class="login">
-      <div class="container">
+      <div class="container  ordercontainer">
         <div class="icon">
           <i class="fas fa-pizza-slice"></i></div>
 
 
 <h1 class="display-4">Order Now</h1>
-  <form action="style.css">
+  <form action="/">
 
 <div class="row">
   <div class="col-lg-6">    <label for="exampleFormControlInput1"> Full Name</label>
@@ -265,7 +265,7 @@ About our shining piza delivery company
 </div>
 <div class="col-lg-6 col-xl-6">
     <label for="exampleFormControlInput1">Email address</label>
-    <input class="form-control" type="email" placeholder="Your E-Mail address" required>
+    <input class="form-control" type="text" placeholder="Your Home Address" required>
 </div>
 
 <div class="col-lg-6">    <label for="exampleFormControlInput1">Phone Number</label>
@@ -292,13 +292,21 @@ About our shining piza delivery company
       <option>5</option>
     </select></div>
 <div class="cta">
-<button type="submit" class="btn btn-lg">Order Now</button>
+<button type="submit" class="order btn btn-lg">Order Now</button>
 </div>
+<div class="result"></div>
 </form>
 </div>
 </div>
    </div>
  </div>
+     </div>
+   </div>
+    <div id="thank" class="thankyou">
+     <div class="container">
+       <h1 class="display-4">Thank You for Ordering at Us, The Delivery comes shortly
+       </h1>
+       <img src="order.png" alt="">
      </div>
    </div>
    <div class="footer">
@@ -326,8 +334,9 @@ About our shining piza delivery company
        </div>
      </div>
    </div>
+  
     <!-- Optional JavaScript -->
-
+<script src="script.js"></script>
    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
