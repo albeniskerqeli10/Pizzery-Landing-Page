@@ -23,6 +23,10 @@
     <title>Pizzero</title>
   </head>
   <body>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
     <div class="homepage">
         <nav class="navbar navbar-expand-lg fixed-top ">
           <div class="container-fluid">
@@ -257,19 +261,19 @@ About our shining piza delivery company
 
 
 <h1 class="display-4">Order Now</h1>
-  <form action="/">
+  <form action="#thank">
 
 <div class="row">
-  <div class="col-lg-6">    <label for="exampleFormControlInput1"> Full Name</label>
-  <input class="form-control" type="text" placeholder="Your Full Name" required>
+  <div class="col-lg-6">     <label for="exampleFormControlInput1"> Full Name</label>
+  <input id="userFullName"   class="form-control" type="text" placeholder="Your Full Name" required>
 </div>
 <div class="col-lg-6 col-xl-6">
     <label for="exampleFormControlInput1">Email address</label>
-    <input class="form-control" type="text" placeholder="Your Home Address" required>
+    <input id="userEmail" class="form-control" type="text" placeholder="Your Home Address" required>
 </div>
 
 <div class="col-lg-6">    <label for="exampleFormControlInput1">Phone Number</label>
-  <input class="form-control" type="number" placeholder="Your Phone Number" required>
+  <input class="form-control"  id="userMessage"  type="number" placeholder="Your Phone Number" required>
 </div>
 <div class="col-lg-6">    <label for="exampleFormControlInput1">Date</label>
   <input class="form-control" type="date" required>
