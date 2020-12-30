@@ -4,8 +4,9 @@ const ordercont = document.querySelector(".ordercontainer");
 const  result = document.querySelector(".result");
 const thanks = document.querySelector(".thankyou");
 const formpage = document.querySelector("form");
-console.log(formpage);
-console.log(forminput);
+const year = document.querySelector(".date");
+console.log(year);
+
 orderbtn.addEventListener("click" , ()=> {
 if( forminput.value ==="") {
 result.innerHTML = "Please fill all Fields";
@@ -21,4 +22,8 @@ else {
   result.style.opacity = "0";
 }
 })
+
+let date = new Date().getFullYear();
+year.innerHTML= date;
+console.log(date);
 
