@@ -24,13 +24,15 @@ var firebaseConfig = {
 var firestore =  firebase.firestore();
 
 let userName = document.querySelector("#userFullName");
-let userEmail = document.querySelector("#userEmail");
-let userMessage = document.querySelector("#userMessage");
-
+let userAddress= document.querySelector("#userAddress");
+let userPhoneNumber = document.querySelector("#userPhoneNumber");
+let userDeliveryDate = document.querySelector("#userDeliveryDate");
+let userType = document.querySelector("#userType");
+let userQuantity = document.querySelector("#userQuantity");
 const db = firestore.collection("orderingData");
 
 
-
+console.log(userName);
 
 
 orderbtn.addEventListener("click" , ()=> {
@@ -44,16 +46,23 @@ console.log(result);
 else {
 	
 let userNameInput = userName.value;
-let userEmailInput = userEmail.value;
-let userMessageInput = userMessage.value;
+let userAddressInput = userAddress.value;
+let userPhoneNumberInput = userPhoneNumber.value;
+let userDeliveryDateInput = userDeliveryDate.value;
+let userTypeInput = userType.value;
+let userQuantityInput = userQuantity.value;
+
   thanks.style.display = "flex";
   formpage.action = "#thank";
   console.log("Very");
   result.style.opacity = "0";
 	db.doc().set({
 customer_name:userNameInput,
-	email_address:userEmailInput,
-	home_address:userMessageInput
+	home_address:userAddressInput,
+	phone_number:userPhoneNumberInput,
+	delivery_date :userDeliveryDateInput,
+	pizza_type : userTypeInput,
+	pizza_quantity :userQuantityInput
 }).then(function() {
 	console.log("Data Saved");
 }).catch(function(error) {
