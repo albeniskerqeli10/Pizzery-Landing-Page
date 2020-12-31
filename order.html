@@ -1,0 +1,120 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+</html>
+<body>
+	 <nav class="navbar navbar-expand-lg bg-darked  ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-pizza-slice"></i>
+
+                Pizzero
+              </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">    <i 
+            class="las la-bars"></i>
+</span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Menu</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link " href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Order</a>
+              </li>
+            </ul>
+            <a class="navbar-brand dimo" href="#">
+              Order Now
+</a>
+</div>
+        </nav>
+<div id="order" class="contact ">
+    <h1 class="text-center">You can order by this form</h1>
+     <div class="container">
+ <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+   <div class="login">
+      <div class="container  ordercontainer">
+        <div class="icon">
+          <i class="fas fa-pizza-slice"></i></div>
+
+
+<h1 class="display-4">Order Now</h1>
+  <form action="#thank">
+
+<div class="row">
+  <div class="col-lg-6">     <label for="exampleFormControlInput1"> Full Name</label>
+  <input id="userFullName"   class="form-control" type="text" placeholder="Your Full Name" required>
+</div>
+<div class="col-lg-6 col-xl-6">
+    <label for="exampleFormControlInput1">Home Address(For Delivery)</label>
+    <input id="userAddress" class="form-control" type="text" placeholder="Your Home Address" required>
+</div>
+
+<div class="col-lg-6">    <label for="exampleFormControlInput1">Phone Number</label>
+  <input class="form-control"  id="userPhoneNumber"  type="number" placeholder="Your Phone Number" required>
+</div>
+<div class="col-lg-6">    <label for="exampleFormControlInput1">Delivery Date</label>
+  <input class="form-control"  id="userDeliveryDate"  type="date" required>
+</div>
+<div class="col-lg-6">    <label for="exampleFormControlInput1">Types of Pizza </label>
+  <select class="form-control"  id="userType" required>
+      <option>Select</option>
+      <option>Margherita Pizza</option>
+      <option>Pepperoni Pizza</option>
+      <option> Neapolitan Pizza	</option>
+      <option>Greek Pizza</option>
+    </select>
+</div>
+<div class="col-lg-6">    <label for="exampleFormControlInput1">Pizza Quantity</label>
+  <select class="form-control" id="userQuantity" required >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select></div>
+    
+<div class="cta">
+<button type="submit" class="order btn btn-lg">Order Now</button>
+</div>
+<div class="result"></div>
+</form>
+</div>
+</div>
+   </div>
+ </div>
+     </div>
+   </div>
+</body>
+  

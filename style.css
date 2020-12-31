@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.bg-darked {
+  background-color: #212121!important;
+
+}
+
 html {
   scroll-behavior: smooth;
 
@@ -17,7 +27,7 @@ body {
 .homepage {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
 url(https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
   background-attachment: fixed;
 
@@ -410,7 +420,7 @@ background-image: linear-gradient(to right top, #ff611d, #ff591c, #ff501c, #ff46
 
 .outline {
   background-color: transparent!important;
-  border: 1px solid #ff611d;
+  border: 1px solid #ff611d!important;
 
 
 }
@@ -574,5 +584,15 @@ transform: translateX(-50vh);
 
 }
 }
+
+
+
+
+@media (max-width: 768px) { 
+.display-4 {
+	font-size:2rem!important;
+}
+
+ }
 
 
